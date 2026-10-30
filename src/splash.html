@@ -1,0 +1,14 @@
+<div id="splash" role="status" aria-label="Loading WinVista">
+  <div class="sp-inner">
+    <img class="sp-logo" src="{{LOGO}}" alt="WinVista" width="344" height="70">
+    <p class="sp-tag" aria-hidden="true"><span class="w1">PVC</span> <span class="w2">&amp;</span> <span class="w3">ALU</span> <span class="w4">CPQ</span></p>
+    <div class="sp-bar" aria-hidden="true"><i></i></div>
+  </div>
+</div>
+<script>
+(() => {
+  const el = document.getElementById('splash'); if (!el) return;
+  const done = () => { el.classList.add('out'); setTimeout(() => el.remove(), 450); };
+  setTimeout(done, 4000);
+})();
+</script>

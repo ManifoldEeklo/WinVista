@@ -1,0 +1,15 @@
+{
+  "name": "winvista",
+  "version": "0.9.0",
+  "private": true,
+  "description": "WinVista – PVC and ALU window and door CPQ for Winsol",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node build.mjs && npx --yes serve@14.2.4 public",
+    "test": "node build.mjs && node tests/smoke.cjs",
+    "test:i18n": "node build.mjs && node tests/i18n-coverage.cjs"
+  },
+  "devDependencies": { "playwright": "1.48.2" }
+}
